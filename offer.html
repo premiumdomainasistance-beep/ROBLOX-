@@ -553,6 +553,7 @@ h4 {
                 updateStepIndicator(2);
                 useroutput.innerHTML = `Searching for <b>${currentUsername}</b> ...`;
                 
+                // بعد 3 ثواني، الانتقال لاختيار الروبكس
                 setTimeout(() => {
                     box2.style.display = "none";
                     box3.style.display = "block";
@@ -569,9 +570,9 @@ h4 {
                 
                 box3.style.display = "none";
                 box2.style.display = "block";
-                updateStepIndicator(4);
                 useroutput.innerHTML = `Processing <b>${selectedRobux}</b> Robux for <b>${currentUsername}</b>...`;
                 
+                // بعد 2.5 ثانية، الانتقال لزر التحقق
                 setTimeout(() => {
                     box2.style.display = "none";
                     box4.style.display = "block";
